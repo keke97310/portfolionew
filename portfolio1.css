@@ -1,0 +1,233 @@
+*{
+    
+    margin: O;
+    padding: O;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+
+/*acceuil*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.navbar { 
+        grid-area: 1 / 1 / 2 / 6;
+        background-color: lightblue;
+        display: flex;   
+    }
+    /* Style de la barre de navigation */
+.navbar {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Espacement intérieur autour de la barre */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+    border-radius: 10px; /* Coins arrondis */
+    
+}
+
+/* Style des liens dans la barre de navigation */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    
+    margin: 0 20px; /* Espacement entre les éléments de la liste */
+    box-shadow: 0 4px 6px gray;
+    border-radius: 10px; /* Coins arrondis pour les liens */
+}
+
+.navbar ul li:last-child {
+    margin-right: 0; /* Supprimer la marge à droite du dernier élément */
+    
+}
+
+.navbar a {
+    text-decoration: none; /* Supprimer les soulignements par défaut sur les liens */
+    color:black; /* Couleur du texte des liens */
+    font-weight: bold; /* Gras */
+    padding: 5px 10px; /* Espacement intérieur autour du texte du lien */
+    text-align: center;
+    flex: 1;
+}
+
+/* Style des liens au survol de la souris */
+.navbar a:hover {
+    color: white; /* Couleur du texte au survol */
+    background-color:lightblue; /* Couleur de fond au survol */
+}
+
+
+
+/*---------------------------Projet--------------------------------------*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px; /* Ajustez la largeur selon vos besoins */
+    margin:auto;
+}
+
+.card {
+    width: 260px; /* Ajustez la largeur des cartes selon vos besoins */
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    background-color: lightgrey;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px grey;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: solid 2px white;
+    position: relative;
+    top:30px;
+}
+
+img:hover{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10;
+
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px blue;
+    opacity: 0.5; /* Réduit l'opacité au survol */
+}
+
+.info{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12%;
+}
+
+.button{
+    margin-bottom:1em;
+    text-align: center;
+}
+
+button{
+    border: solid 2px lightgrey;
+    border-radius: 5px;
+    background: lightblue;
+    color: white;
+    cursor:pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    background: blue;
+    color:lightblue;
+
+}
+/*-------------------formulaire contact---------------------------*/
+
+.form{
+    margin: 10%;
+    margin-left: 35%;
+}
+
+
+
+form {
+    background-color:#FAFAFA;
+    padding:10px;
+    width: 300px;
+    }
+
+fieldset {
+        padding:0 20px 20px 20px;
+        margin-bottom:10px;
+        border:1px solid #DF3F3F;
+        }
+legend {
+        color:#DF3F3F;
+        font-weight:bold
+        }
+label {
+        margin-top:10px;
+        display:block;
+        }
+
+label.inline {
+            display:inline;
+            margin-right:50px;
+            }
+
+input, textarea, select, option {
+                background-color:#FFF3F3;
+                }
+input, textarea, select {
+                padding:3px;
+                border:1px solid #F5C5C5;
+                border-radius:5px;
+                width:200px;
+                box-shadow:1px 1px 2px #C0C0C0 inset;
+                }
+select {
+                margin-top:10px;
+                }
+input[type=radio] {
+                background-color:transparent;
+                border:none;
+                width:10px;
+                }
+input[type=submit], input[type=reset] {
+                width:100px;
+                margin-left:5px;
+                box-shadow:1px 1px 1px #D83F3D;
+                cursor:pointer;
+                }
+/*-------------------------------------------footer------------------------*/
+    .footer { 
+        grid-area: 5 / 1 / 6 / 6; 
+    }
+    .div3 { 
+        grid-area: 2 / 1 / 5 / 6; 
+    }
+
+    footer {
+        background-color: lightgrey;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /*position: fixed;*/
+        bottom: 0;
+        width:100%;
+        height: 10%;
+        padding: 10px 0;
+    }
