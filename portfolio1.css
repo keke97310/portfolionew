@@ -163,58 +163,65 @@ form {
     background-color:#FAFAFA;
     padding:10px;
     width: 300px;
-    }
+}
 
 fieldset {
         padding:0 20px 20px 20px;
         margin-bottom:10px;
         border:1px solid #DF3F3F;
-        }
+}
 legend {
         color:#DF3F3F;
         font-weight:bold
-        }
+}
 label {
         margin-top:10px;
         display:block;
-        }
+}
 
 label.inline {
             display:inline;
             margin-right:50px;
-            }
+}
 
 input, textarea, select, option {
                 background-color:#FFF3F3;
-                }
+}
+
 input, textarea, select {
                 padding:3px;
                 border:1px solid #F5C5C5;
                 border-radius:5px;
                 width:200px;
                 box-shadow:1px 1px 2px #C0C0C0 inset;
-                }
+}
+
 select {
                 margin-top:10px;
-                }
+}
+
 input[type=radio] {
                 background-color:transparent;
                 border:none;
                 width:10px;
-                }
+}
+
 input[type=submit], input[type=reset] {
                 width:100px;
                 margin-left:5px;
                 box-shadow:1px 1px 1px #D83F3D;
                 cursor:pointer;
-                }
+}
+
 /*-------------------------------------------footer------------------------*/
     .footer { 
         grid-area: 5 / 1 / 6 / 6; 
-    }
+}
+
     .div3 { 
         grid-area: 2 / 1 / 5 / 6; 
-    }
+}
+
 
     footer {
         background-color: lightgrey;
@@ -231,3 +238,30 @@ input[type=submit], input[type=reset] {
         height: 10%;
         padding: 10px 0;
     }
+
+
+    /*--------------------mediaqueries--------------------------------*/
+
+   /* @media screen and (max-width:1080px){
+        body{
+          
+        }
+        .corp{
+            width: 50%;
+        }
+        .navbar{
+            width: 100%;
+        }
+    } 
+
+    @media screen and (max-width:582px){
+        .navbar{
+            
+            margin: 0%;
+        }
+
+        .parent{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }*/
